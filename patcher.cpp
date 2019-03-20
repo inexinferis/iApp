@@ -34,22 +34,13 @@ BOOL Patcher::Init(INT vr,LPCSTR file,LPCSTR newName,BOOL aow){
       bRet=(pData!=NULL);
       if(!bRet){
         dwLastError=2;
-        #ifdef _DEBUG
-          DbgPrint("--- Patcher::Init -> Init fail");
-        #endif
       }
     }else{
       dwLastError=1;
-      #ifdef _DEBUG
-        DbgPrint("--- Patcher::Init -> File %s not exists\n",file);
-      #endif
     }
     RtlWow64EnableFsRedirection(TRUE);
   }else{
     dwLastError=401;
-    #ifdef _DEBUG
-      DbgPrint("--- Patcher::Init -> Invalid arguments\n");
-    #endif
   }
   return bRet;
 }
@@ -60,17 +51,6 @@ BOOL Patcher::Patch(){
     for(i=0;i<pData->len&&i<MAXPATHRECORDS;i++){
       if(!(data=FindPattern(pBuffer,dwSize,pData->offsets[i].pattern,pData->offsets[i].patlent,pData->offsets[i].offset))){
         dwLastError=10+i;
-        #ifdef _DEBUG
-          DbgPrint("--- Patcher::Patch -> Pattern %d [%02X] not found for %s\n",i,pData->offsets[i].pattern[0],szPath);
-          INT j=pData->offsets[i].patlent;
-          for(;j>0;j--){
-            if((data=FindPattern(pBuffer,dwSize,pData->offsets[i].pattern,j,pData->offsets[i].offset))){
-              DbgPrint("--- Patcher::Patch -> Pattern %02X found for at %d [%p] - %s\n",
-                pData->offsets[i].pattern[0],j,data-pBuffer,szPath);
-              break;
-            }
-          }
-        #endif
         break;//pattern not found???
       }
       memmove(data,pData->offsets[i].data,pData->offsets[i].datalen);
@@ -82,9 +62,6 @@ BOOL Patcher::Patch(){
         }
       }
     }
-    #ifdef _DEBUG
-      DbgPrint("--- Patcher::Patch -> Patch Pattern Status %d %d\n",i,pData->len);
-    #endif
     if(i==pData->len){
       //Update checksum
       CheckSumMappedFile(pBuffer,dwSize,&HeaderSum,&CheckSum);
@@ -94,10 +71,6 @@ BOOL Patcher::Patch(){
       return Save();
     }
   }
-  #ifdef _DEBUG
-  else
-    DbgPrint("--- Patcher::Patch -> Can't open file %s or pdata is empty -> 0x%p\n",szPath,pData);
-  #endif
   return FALSE;
 }
 
@@ -111,9 +84,6 @@ BOOL Patcher::Open(){
         pBuffer=(PBYTE)GlobalAlloc(GPTR,dwSize);
       }else{
         dwLastError=4;
-        #ifdef _DEBUG
-          DbgPrint("--- Patcher::Open -> Get file size fail for %s\n",szPath);
-        #endif
       }
     }
     if(pBuffer!=NULL){
@@ -122,24 +92,15 @@ BOOL Patcher::Open(){
         bRet=TRUE;
       }else{
         dwLastError=6;
-        #ifdef _DEBUG
-          DbgPrint("--- Patcher::Open -> read file fail for %s\n",szPath);
-        #endif
         GlobalFree(pBuffer);
         pBuffer=NULL;
       }
     }else{
       dwLastError=5;
-      #ifdef _DEBUG
-        DbgPrint("--- Patcher::Open -> Can't allocate memory for %s\n",szPath);
-      #endif
     }
     file.Close();
   }else{
     dwLastError=3;
-    #ifdef _DEBUG
-      DbgPrint("--- Patcher::Open -> Open file %s fail\n",szPath);
-    #endif
   }
   RtlWow64EnableFsRedirection(TRUE);
   return bRet;
@@ -154,23 +115,14 @@ BOOL Patcher::Save(){
       bRet=file.Write(pBuffer,dwSize,&dwWrite,NULL);
       if(!bRet){
         dwLastError=9;
-        #ifdef _DEBUG
-          DbgPrint("--- Patcher::Save -> Write file fail for %s\n",szNewPath);
-        #endif
       }
       file.Close();
     }else{
       dwLastError=8;
-      #ifdef _DEBUG
-        DbgPrint("--- Patcher::Save -> File open fail for %s\n",szNewPath);
-      #endif
     }
     RtlWow64EnableFsRedirection(TRUE);
   }else{
     dwLastError=7;
-    #ifdef _DEBUG
-      DbgPrint("--- Patcher::Save -> No memory allocated for %s\n",szNewPath);
-    #endif
   }
   return bRet;
 }
