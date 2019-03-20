@@ -1,0 +1,334 @@
+#include "iapprsrc.h"
+
+IDI_IAPPICON            ICON                    "iapp.ico"
+IDI_DWICON              ICON                    "icons\\dw.ico"
+
+IDI_HLICON              ICON                    "icons\\hl.ico"
+IDI_CSICON              ICON                    "icons\\cs.ico"
+IDI_HL2ICON             ICON                    "icons\\hl2.ico"
+IDI_CSSICON             ICON                    "icons\\css.ico"
+IDI_CSGOICON            ICON                    "icons\\csgo.ico"
+
+IDI_IRICON              ICON                    "icons\\ir.ico"
+IDI_SEICON              ICON                    "icons\\se.ico"
+IDI_IRSICON             ICON                    "icons\\irs.ico"
+IDI_IRGOICON            ICON                    "icons\\irgo.ico"
+IDI_HDICON              ICON                    "icons\\hd.ico"
+
+IDB_CSBMP               BITMAP                  "bitmaps\\cs.bmp"
+IDB_IRBMP               BITMAP                  "bitmaps\\ir.bmp"
+IDB_SEBMP               BITMAP                  "bitmaps\\se.bmp"
+
+1                       RT_MANIFEST             "iApp.Manifest"
+
+LANGUAGE LANG_SPANISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+  SID_ADMINREQUIRED   "Este programa necesita ejecutarse con permisos de administrador"
+  SID_INIT_SESSION    "Iniciar sesión"
+  SID_WELCOME         "Bienvenido a Inexinferis App, por favor inicie sesión para continuar:"
+  SID_USERNAME        "Nombre de usuario:"
+  SID_PASSWORD        "Contraseña:"
+  SID_REMEMBER        "Recordar"
+  SID_LOGIN           "Iniciar sesión"
+  SID_CANCEL          "Cancelar"
+  SID_OK              "Aceptar"
+  SID_CLOSE           "Cerrar"
+  SID_PLAY            "Jugar"
+  SID_INSTALL         "Instalar"
+  SID_UNINSTALL       "Desinstalar"
+  SID_ACTIVATE        "Activar"
+  SID_DOWNLOAD        "Descargar"
+  SID_UPDATE          "Actualizar"
+  SID_BUY             "Comprar!"
+  SID_NOTAVAILABLE    "No disponible"
+  SID_INFO            "Información"
+  SID_UNLOAD          "Descargar"
+END
+
+//connection string table...
+STRINGTABLE
+BEGIN
+  SID_STARTINGSESSION "Iniciando sesión..."
+  SID_CONNECTING      "Conectando con www.inexinferis.com..."
+  SID_RESOLVING       "Resolviendo dirección..."
+  SID_SENDINGREQUEST  "Envidando petición..."
+  SID_RECEIVINGRESPONSE  "Recibiendo respuesta..."
+  SID_CLOSINGCONNECTION  "Cerrando conexión..."
+  SID_COULDNOTCONNECT "No se puede conectar con el servidor Inexinferis."
+  SID_CLOSINGSESSION  "Cerrando sesión..."
+  SID_CONNECTIONOK    "Conexión inactiva..."
+END
+
+STRINGTABLE
+BEGIN
+  SID_APP_NAME        "Inexinferis App"
+  SID_APP_NAME_FULL   "Inexinferis App Vr. %1 - %2"
+  SID_WEB_URL         "http://www.inexinferis.com"
+  SID_APP_CREDITS     "Inexinferis App Vr. %1 - Copyright © Exinferis Inc. 1999 - 2017 <www.inexinferis.com>"
+  SID_INTERNAL_ERROR  "Error interno desconocido"
+  SID_CHECKINGUPDATES "Buscando actualizaciones"
+  SID_UPDATEAVAILABLE "Hay una actualización crítica disponible, ¿Desea descargarla?\nSi hace clic en ""No"" finalizará el programa"
+  SID_NOUPDATES       "No hay actualizaciones disponibles, gracias por verificar"
+  SID_MANUALUPDATE    "Hay una actualización disponible, ¿Desea reiniciar el programa para aplicar la actualización?"
+  SID_UPDATING        "Actualizando..."
+  SID_NOINFORMATION   "No hay información asociada al contenido"
+  SID_USERNOTACTIVE   "La cuenta de usuario no está activa, verifique en el sitio Web"
+  SID_IVALIDUSERDATA  "Los datos ingresados no coinciden ningún usuario activo"
+  SID_BANNEDACCOUNT   "La cuenta de usuario tiene restringido el acceso,\nverifique en la web para más información"
+  SID_INVALIDPROTOCOL "La respuesta del servidor no es compatible con esta versión del cliente,\npor favor verifique si tiene la última versión"
+  SID_FILENOTFOUND    "Archivo no encontrado"
+  SID_MD5CHECKFAIL    "No se pudo comprobar la validez del archivo,\nconsulte en la Web para más detalles"
+  SID_UNINSTALLWARN   "¿Está seguro que desea desinstalar el programa?"
+  SID_ALREADYRUNNING  "¿Hay un cheat ejecutándose, desea finalizarlo?"
+  SID_LOADERROR       "Ha ocurrido un problema al intentar cargar el cheat\r\nVerifique la ventana de logs para más información"
+  SID_CHEATLOADED     "Cheat cargado..."
+  SID_CHEATUNLOADED   "Cheat descargado..."
+  SID_CHEATNOTFOUND   "No se han encontrado o no se tiene acceso los archivos del cheat..."
+  SID_CHEATINVALID    "Formato de cheat no compatible"
+  SID_CHEATERROR      "Error en ejecución: %s"
+  SID_CONNECTIONERROR "Problema de conexión!"
+  SID_CONNECTIONLOST  "Se ha perdido la conexión! ¿Desea reintentar?\nSi hace clic en ""No"" finalizará el programa"
+  SID_SYSTEMRESTART   "Reiniciar el sistema"
+  SID_RESTARTREQUIRED "El sistema necesita ser reiniciado para continuar, si hace click en ""No"" no podrá utlizar el cheat"
+END
+
+STRINGTABLE
+BEGIN
+  SID_PATCHGUARD      "Patchguard"
+  SID_PATCH           "Patch"
+  SID_RESTORE         "Restaurar"
+  SID_PATCHED         "Modificado"
+  SID_NOTPATCHED      "No Modificado"
+  SID_ADVANCEDOPTIONS "Opciones Avanzadas"
+  SID_DEFAULTENTRYE   "Marcar como opción por defecto"
+  SID_LOADERNAME      "Loader File Name"
+  SID_KERNELNAME      "Kernel File Name"
+  SID_INCOMPATIBLEWVR "Versión de Windows Incompatible"
+  SID_INITFAIL        "Error inicializando el componente, por favor comuníquese con el administrador para más información"
+  SID_INVALIDNAMES    "El campo KernelName o el campo LoaderName está vacío, debe contener un nombre válido"
+  SID_FILESEXISTS     "Exiten archivos con el mismo para LoaderName o KernelName, por favor elija otros nombres o elimine los archivos existentes"
+  SID_PATCHFAIL       "El intento de modificación a fallado, por favor comuníquese con el administrador para más información"
+  SID_RESTOREFAIL     "La restauración a fallado, por favor comuníquese con el administrador para más información"
+  SID_ADV_WARNING     "Advertencia: Modificar estas opciones puede romper el inicio de Windows,\nasegúrese que el disabler funcione correctamente antes de habilitar estas opciones."
+END
+
+STRINGTABLE
+BEGIN
+  SID_ABOUT_IAPP      "Acerca de Inexinferis App"
+  SID_ABOUT_DETAIL    "Aplicación cliente Inexinferis Vr. %1\r\n\r\nCopyright © Inexinferis Inc. 1999 - 2017"
+END
+
+STRINGTABLE
+BEGIN
+  SID_IAPP_SETTINGS   "Preferencias"
+  SID_IAPP_LANG       "Lenguaje:"
+  SID_IAPP_AUTOLANG   "Automático"
+  SID_IAPP_ENGLANG    "Ingles"
+  SID_IAPP_ESPLANG    "Español"
+  SID_IAPP_AUTOSTART  "Iniciar con Windows"
+  SID_IAPP_MINSTART   "Iniciar minimizado"
+  SID_IAPP_FLOGOUT    "Cerrar sesión al salir"
+  SID_IAPP_NEEDRESTART "Necesita reiniciar el programa para aplicar el cambio de idioma"
+END
+
+//Menu
+STRINGTABLE
+BEGIN
+  SID_IAPP_MENU        "&IApp"
+  SID_LOGOUT_MENU      "&Cerrar sesion"
+  SID_UPDATE_MENU      "&Buscar actualizaciones..."
+  SID_SETTINGS_MENU    "&Preferencias..."
+  SID_EXIT_MENU        "&Salir"
+  SID_TOOLS_MENU       "&Herramientas"
+  SID_PATCHGUARD_MENU  "&Patchguard..."
+  SID_HELP_MENU        "&Ayuda"
+  SID_CONTENTS_MENU    "&Contenido..."
+  SID_LICENCES_MENU    "Acerca de las &licencias..."
+  SID_ABOUT_MENU       "&Acerca..."
+END
+
+//States
+STRINGTABLE
+BEGIN
+  SID_IAPP_STATUS        "Estado: %1"
+  SID_READYTOPLAY        "Listo para jugar"
+  SID_READYTOACTIVATE    "Listo para activar"
+  SID_READYTODOWNLOAD    "Listo para descargar"
+  SID_READYTOINSTALL     "Listo para instalar"
+  SID_OUTDATEDVERSION    "Version desactualizada"
+  SID_FILESMISSING       "Archivos faltantes"
+  SID_ACTIVATING         "Activando..."
+  SID_DOWNLOADING        "Descargando..."
+  SID_RUNNING            "Corriendo..."
+  SID_NOLICENCES         "Sin licencia"
+  SID_LICTIME            "Quedan %1 días de licencia..."
+  SID_PLAYDESC           "Haga click en Jugar para iniciar..."
+  SID_ACTDESC            "Necesita activar la licencia..."
+  SID_DOWNDESC           "Necesita descargar los archivos..."
+  SID_UPDDESC            "Necesita actualizar los archivos..."
+  SID_MISSDESC           "No se encontraron los archivos necesarios!"
+  SID_NOLICDESC          "Para obtener una licencia haga clic en Comprar"
+  SID_NOAVADESC          "No disponible para esta cuenta de usuario"
+  SID_SEMIPUBLICCHEATS   "Otros Cheats"
+  SID_PRIVATECHEATS      "Cheats Privados"
+  SID_PUBLICCHEATS       "Cheats Públicos"
+END
+
+
+// English
+
+LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
+
+STRINGTABLE
+BEGIN
+  SID_ADMINREQUIRED   "This program needs to run with administrator permissions"
+  SID_INIT_SESSION    "Start sesion"
+  SID_WELCOME         "Welcome to Inexinferis APP, please login to start:"
+  SID_USERNAME        "Username:"
+  SID_PASSWORD        "Password:"
+  SID_REMEMBER        "Remember"
+  SID_LOGIN           "Login"
+  SID_CANCEL          "Cancel"
+  SID_OK              "Ok"
+  SID_CLOSE           "Close"
+  SID_PLAY            "Play"
+  SID_INSTALL         "Install"
+  SID_UNINSTALL       "Uninstall"
+  SID_ACTIVATE        "Activate"
+  SID_DOWNLOAD        "Download"
+  SID_UPDATE          "Update"
+  SID_BUY             "Buy!"
+  SID_NOTAVAILABLE    "Not available"
+  SID_INFO            "Information"
+  SID_UNLOAD          "Unload"
+END
+
+STRINGTABLE
+BEGIN
+  SID_STARTINGSESSION "Starting session..."
+  SID_CONNECTING      "Connecting to www.inexinferis.com..."
+  SID_RESOLVING       "Resolving address..."
+  SID_SENDINGREQUEST  "Sending request..."
+  SID_RECEIVINGRESPONSE  "Receiving response..."
+  SID_CLOSINGCONNECTION  "Closing connection..."
+  SID_COULDNOTCONNECT "Couldn't connect to Inexinferis server."
+  SID_CLOSINGSESSION  "Closing session..."
+  SID_CONNECTIONOK    "Connection inactive..."
+END
+
+STRINGTABLE
+BEGIN
+  SID_APP_NAME        "Inexinferis App"
+  SID_APP_NAME_FULL   "Inexinferis App Vr. %1 - %2"
+  SID_WEB_URL         "http://www.inexinferis.com"
+  SID_APP_CREDITS     "Inexinferis App Vr. %1 - Copyright © Exinferis Inc. 1999 - 2017 <www.inexinferis.com>"
+  SID_INTERNAL_ERROR  "Unknown internal error"
+  SID_CHECKINGUPDATES "Checking for updates"
+  SID_UPDATEAVAILABLE "There is a critical update available, do you like to download?\nIf you click ""No"" the program will close"
+  SID_NOUPDATES       "There are no updates available, thanks for check!"
+  SID_MANUALUPDATE    "There is an update available! do you want to restart the program to apply the update?"
+  SID_UPDATING        "Updating..."
+  SID_NOINFORMATION   "No information associated with the content"
+  SID_USERNOTACTIVE   "The user account is not active, check in the website"
+  SID_IVALIDUSERDATA  "The user data does not match a known active account"
+  SID_BANNEDACCOUNT   "The user account has restricted access,\ncheck the Web for more information"
+  SID_INVALIDPROTOCOL "The server response is not compatible with this version of the client,\nplease check if you have the latest version"
+  SID_FILENOTFOUND    "File not found"
+  SID_MD5CHECKFAIL    "Couldn't validate file integrity,\nconsult website for details"
+  SID_UNINSTALLWARN   "Are you sure you want to uninstall the program?"
+  SID_ALREADYRUNNING  "There is a cheat running, you want to finish it?"
+  SID_LOADERROR       "A problem occurred while trying to load the cheat\r\nCheck log window for more information"
+  SID_CHEATLOADED     "Cheat loaded..."
+  SID_CHEATUNLOADED   "Cheat unloaded..."
+  SID_CHEATNOTFOUND   "Cheat files not found or not accessible..."
+  SID_CHEATINVALID    "Cheat format not compatible"
+  SID_CHEATERROR      "Operation fail: %s"
+  SID_CONNECTIONERROR "Connection error!"
+  SID_CONNECTIONLOST  "Connection lost! Retry?\nIf you click ""No"" the program will close"
+  SID_SYSTEMRESTART   "System Restart"
+  SID_RESTARTREQUIRED "The system needs to be restarted to continue, if you click ""No"" you can not use the cheat"
+END
+
+STRINGTABLE
+BEGIN
+  SID_PATCHGUARD      "Patchguard"
+  SID_PATCH           "Patch"
+  SID_RESTORE         "Restore"
+  SID_PATCHED         "Patched"
+  SID_NOTPATCHED      "Not Patched"
+  SID_ADVANCEDOPTIONS "Advanced Options"
+  SID_DEFAULTENTRYE   "Set as Default Option"
+  SID_LOADERNAME      "Loader File Name"
+  SID_KERNELNAME      "Kernel File Name"
+  SID_INCOMPATIBLEWVR "Incompatible Windows Version"
+  SID_INITFAIL        "Error initializing the component, please contact administrator for more information"
+  SID_INVALIDNAMES    "The field KernelName or the field LoaderName is empty, it must contain a valid file name"
+  SID_FILESEXISTS     "There are files with the same names for LoaderName or KernelName, please choose other or remove existing files"
+  SID_PATCHFAIL       "Patch fail, please contact administrator for more information"
+  SID_RESTOREFAIL     "Restore has fail, please contact administrator for more information"
+  SID_ADV_WARNING     "Warning: Modify these options can break your Windows startup,\nmake sure the disabler works properly before enabling these options."
+END
+
+STRINGTABLE
+BEGIN
+  SID_ABOUT_IAPP      "About Inexinferis App"
+  SID_ABOUT_DETAIL    "Inexinferis Client Application Vr. %1\r\n\r\nCopyright © Inexinferis Inc. 1999 - 2017"
+END
+
+STRINGTABLE
+BEGIN
+  SID_IAPP_SETTINGS   "Settings"
+  SID_IAPP_LANG       "Language:"
+  SID_IAPP_AUTOLANG   "Automatic"
+  SID_IAPP_ENGLANG    "English"
+  SID_IAPP_ESPLANG    "Spanish"
+  SID_IAPP_AUTOSTART  "Start with Windows"
+  SID_IAPP_MINSTART   "Start minimized"
+  SID_IAPP_FLOGOUT    "Logout on exit"
+  SID_IAPP_NEEDRESTART "You need restart the program to apply language change"
+END
+
+//Menu
+STRINGTABLE
+BEGIN
+  SID_IAPP_MENU        "&IApp"
+  SID_LOGOUT_MENU      "&Logout"
+  SID_UPDATE_MENU      "&Check for updates..."
+  SID_SETTINGS_MENU    "&Settings..."
+  SID_EXIT_MENU        "&Exit"
+  SID_TOOLS_MENU       "&Tools"
+  SID_PATCHGUARD_MENU  "&Patchguard..."
+  SID_HELP_MENU        "&Help"
+  SID_CONTENTS_MENU    "&Contents..."
+  SID_LICENCES_MENU    "About &licences..."
+  SID_ABOUT_MENU       "&About..."
+END
+
+//States
+STRINGTABLE
+BEGIN
+  SID_IAPP_STATUS        "Status: %1"
+  SID_READYTOPLAY        "Ready to play"
+  SID_READYTOACTIVATE    "Ready to activate"
+  SID_READYTODOWNLOAD    "Ready to download"
+  SID_READYTOINSTALL     "Ready to install"
+  SID_OUTDATEDVERSION    "Outdated version"
+  SID_FILESMISSING       "Files missing"
+  SID_ACTIVATING         "Activating..."
+  SID_DOWNLOADING        "Downloading..."
+  SID_RUNNING            "Running..."
+  SID_NOLICENCES         "No valid licence"
+  SID_LICTIME            "You have %1 days of license..."
+  SID_PLAYDESC           "Click Play to start..."
+  SID_ACTDESC            "You need activate the license..."
+  SID_DOWNDESC           "You need download the files..."
+  SID_UPDDESC            "You need update the files..."
+  SID_MISSDESC           "Required files not found!"
+  SID_NOLICDESC          "To obtain a license click Buy"
+  SID_NOAVADESC          "Not available for this user account"
+  SID_SEMIPUBLICCHEATS   "Other Cheats"
+  SID_PRIVATECHEATS      "Private Cheats"
+  SID_PUBLICCHEATS       "Public Cheats"
+END

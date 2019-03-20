@@ -1,0 +1,579 @@
+# depslib dependency file v1.0
+1553041992 source:d:\codeblocks\examples\iapp.github\aboutdlg.cpp
+	"main.h"
+
+1553043847 d:\codeblocks\examples\iapp.github\main.h
+	"x/x.h"
+	"x/xcoords.h"
+	"x/xwnd.h"
+	"x/xapp.h"
+	"x/xframewnd.h"
+	"x/xobject.h"
+	"x/xskinnededit.h"
+	"x/xskinnedstatic.h"
+	"x/xskinnedbutton.h"
+	"x/xskinnedframe.h"
+	"x/xskinneddlg.h"
+	"x/xskinnedmenu.h"
+	"x/xskinnedlistview.h"
+	"x/xskinnedtreeview.h"
+	"x/xskinnedprogress.h"
+	"x/xskinnedcombobox.h"
+	"x/xskinnedstatusbar.h"
+	"x/xshellnotifyicon.h"
+	"connection.h"
+	"register.h"
+	"iapprsrc.h"
+	"utils.h"
+	"patchguarddisabler.h"
+
+1553043097 d:\codeblocks\examples\iapp.github\x\x.h
+	"xutils.h"
+	"xobject.h"
+	"xgdi.h"
+	"xdialog.h"
+	"xframewnd.h"
+	"xtreeview.h"
+	"xlistview.h"
+	"xtabctrl.h"
+	"xbutton.h"
+	"xstatic.h"
+	"xedit.h"
+	"xmenu.h"
+	"xmenuex.h"
+	"xstatusbar.h"
+	"xfile.h"
+	"xmdiframewnd.h"
+	"xmdichildwnd.h"
+	"xthread.h"
+	"xlistview.h"
+	"ximagelist.h"
+	"xrichedit.h"
+	"xstaticlink.h"
+	"xlinkctrl.h"
+	"xtl.h"
+	"xhtmlctrl.h"
+
+1553043481 d:\codeblocks\examples\iapp.github\x\xutils.h
+	"xobject.h"
+	<string>
+
+1553043304 d:\codeblocks\examples\iapp.github\x\xobject.h
+	<windows.h>
+	<commctrl.h>
+	<uxtheme.h>
+	<wininet.h>
+	<tchar.h>
+	<stdlib.h>
+	<stdio.h>
+	<stddef.h>
+	<math.h>
+	<malloc.h>
+	<map>
+	<list>
+	"xundef.h"
+
+1553043481 d:\codeblocks\examples\iapp.github\x\xundef.h
+	"xobject.h"
+	"docobj.h"
+
+1553043301 d:\codeblocks\examples\iapp.github\x\xgdi.h
+	"xapp.h"
+
+1553043098 d:\codeblocks\examples\iapp.github\x\xapp.h
+	"xutils.h"
+	"xevent.h"
+
+1553043100 d:\codeblocks\examples\iapp.github\x\xevent.h
+	"xobject.h"
+
+1553043099 d:\codeblocks\examples\iapp.github\x\xdialog.h
+	"xwnd.h"
+
+1553043482 d:\codeblocks\examples\iapp.github\x\xwnd.h
+	"xapp.h"
+	"xevent.h"
+	"xcoords.h"
+	"xtl.h"
+
+1553043099 d:\codeblocks\examples\iapp.github\x\xcoords.h
+	"xobject.h"
+	"xcoords.cpp"
+
+1553042300 d:\codeblocks\examples\iapp.github\x\xcoords.cpp
+
+1553043480 d:\codeblocks\examples\iapp.github\x\xtl.h
+	"xobject.h"
+	"xutils.h"
+	"xevent.h"
+	<ole2.h>
+	<olectl.h>
+	<mbstring.h>
+	<shlobj.h>
+	<limits.h>
+
+1553043300 d:\codeblocks\examples\iapp.github\x\xframewnd.h
+	"xwnd.h"
+
+1553043481 d:\codeblocks\examples\iapp.github\x\xtreeview.h
+	"xwnd.h"
+
+1553043302 d:\codeblocks\examples\iapp.github\x\xlistview.h
+	"xwnd.h"
+
+1553043480 d:\codeblocks\examples\iapp.github\x\xtabctrl.h
+	"xwnd.h"
+
+1553043098 d:\codeblocks\examples\iapp.github\x\xbutton.h
+	"xwnd.h"
+
+1553043479 d:\codeblocks\examples\iapp.github\x\xstatic.h
+	"xwnd.h"
+
+1553043100 d:\codeblocks\examples\iapp.github\x\xedit.h
+	"xwnd.h"
+
+1553043303 d:\codeblocks\examples\iapp.github\x\xmenu.h
+	"xobject.h"
+
+1553043303 d:\codeblocks\examples\iapp.github\x\xmenuex.h
+	"xmenu.h"
+
+1553043480 d:\codeblocks\examples\iapp.github\x\xstatusbar.h
+	"xwnd.h"
+
+1553043299 d:\codeblocks\examples\iapp.github\x\xfile.h
+	"xobject.h"
+
+1553043303 d:\codeblocks\examples\iapp.github\x\xmdiframewnd.h
+	"xframewnd.h"
+
+1553043302 d:\codeblocks\examples\iapp.github\x\xmdichildwnd.h
+	"xmdiframewnd.h"
+
+1553043480 d:\codeblocks\examples\iapp.github\x\xthread.h
+	"xobject.h"
+	"xutils.h"
+
+1553043301 d:\codeblocks\examples\iapp.github\x\ximagelist.h
+	"xapp.h"
+
+1553043305 d:\codeblocks\examples\iapp.github\x\xrichedit.h
+	"xwnd.h"
+	<richedit.h>
+	<richole.h>
+
+1553043479 d:\codeblocks\examples\iapp.github\x\xstaticlink.h
+	"xstatic.h"
+	"xgdi.h"
+
+1553043302 d:\codeblocks\examples\iapp.github\x\xlinkctrl.h
+	"xwnd.h"
+
+1553043301 d:\codeblocks\examples\iapp.github\x\xhtmlctrl.h
+	"xtl.h"
+	"xolectrl.h"
+	<exdisp.h>
+	<mshtml.h>
+
+1553043304 d:\codeblocks\examples\iapp.github\x\xolectrl.h
+	"xwnd.h"
+	"xcoords.h"
+	"xgdi.h"
+
+1553043477 d:\codeblocks\examples\iapp.github\x\xskinnededit.h
+	"xedit.h"
+	"xcoords.h"
+	"xgdi.h"
+	"xskinnedwnd.h"
+
+1553043479 d:\codeblocks\examples\iapp.github\x\xskinnedwnd.h
+	"xwnd.h"
+	"xgdi.h"
+	"xskinnedmenu.h"
+
+1553043478 d:\codeblocks\examples\iapp.github\x\xskinnedmenu.h
+	"xmenuex.h"
+	"xgdi.h"
+	"xcoords.h"
+
+1553043478 d:\codeblocks\examples\iapp.github\x\xskinnedstatic.h
+	"xstatic.h"
+	"xcoords.h"
+	"xgdi.h"
+	"xskinnedwnd.h"
+
+1553043306 d:\codeblocks\examples\iapp.github\x\xskinnedbutton.h
+	"xbutton.h"
+	"xcoords.h"
+	"xgdi.h"
+	"xskinnedwnd.h"
+
+1553043477 d:\codeblocks\examples\iapp.github\x\xskinnedframe.h
+	"xframewnd.h"
+	"xskinnedwnd.h"
+	"xskinnedmsgbox.h"
+
+1553043478 d:\codeblocks\examples\iapp.github\x\xskinnedmsgbox.h
+	"xmsgbox.h"
+	"xskinnedwnd.h"
+	"xskinnedstatic.h"
+	"xskinnedbutton.h"
+
+1553043303 d:\codeblocks\examples\iapp.github\x\xmsgbox.h
+	"xdialog.h"
+	"xstatic.h"
+	"xbutton.h"
+	"xgdi.h"
+
+1553043476 d:\codeblocks\examples\iapp.github\x\xskinneddlg.h
+	"xdialog.h"
+	"xskinnedwnd.h"
+	"xskinnedmsgbox.h"
+
+1553043477 d:\codeblocks\examples\iapp.github\x\xskinnedlistview.h
+	"xlistview.h"
+	"xcoords.h"
+	"xgdi.h"
+	"ximagelist.h"
+	"xskinnedwnd.h"
+
+1553043479 d:\codeblocks\examples\iapp.github\x\xskinnedtreeview.h
+	"xtreeview.h"
+	"xcoords.h"
+	"xgdi.h"
+	"ximagelist.h"
+	"xskinnedwnd.h"
+
+1553043478 d:\codeblocks\examples\iapp.github\x\xskinnedprogress.h
+	"xprogress.h"
+	"xcoords.h"
+	"xgdi.h"
+	"xskinnedwnd.h"
+
+1553043305 d:\codeblocks\examples\iapp.github\x\xprogress.h
+	"xwnd.h"
+
+1553043306 d:\codeblocks\examples\iapp.github\x\xskinnedcombobox.h
+	"xcombobox.h"
+	"xcoords.h"
+	"xgdi.h"
+	"xskinnedwnd.h"
+
+1553043098 d:\codeblocks\examples\iapp.github\x\xcombobox.h
+	"xwnd.h"
+
+1553043479 d:\codeblocks\examples\iapp.github\x\xskinnedstatusbar.h
+	"xstatusbar.h"
+	"xcoords.h"
+	"xgdi.h"
+	"xskinnedwnd.h"
+
+1553043306 d:\codeblocks\examples\iapp.github\x\xshellnotifyicon.h
+	"xobject.h"
+	"xevent.h"
+
+1553044074 d:\codeblocks\examples\iapp.github\connection.h
+	"x/xinternet.h"
+	"utils.h"
+	<winsock2.h>
+
+1553043301 d:\codeblocks\examples\iapp.github\x\xinternet.h
+	"xapp.h"
+	"xfile.h"
+	"xutils.h"
+
+1553042398 d:\codeblocks\examples\iapp.github\utils.h
+	<windows.h>
+	<winioctl.h>
+	<tlhelp32.h>
+	<stdlib.h>
+	<stdio.h>
+	<tchar.h>
+	<aclapi.h>
+	"reason.h"
+	<openssl/md5.h>
+	<openssl/rsa.h>
+	<openssl/rc4.h>
+	<openssl/pem.h>
+
+1553042398 d:\codeblocks\examples\iapp.github\register.h
+	"x/xregkey.h"
+	"utils.h"
+
+1553043305 d:\codeblocks\examples\iapp.github\x\xregkey.h
+	"xobject.h"
+
+1553041850 d:\codeblocks\examples\iapp.github\iapprsrc.h
+	<windows.h>
+
+1553043847 d:\codeblocks\examples\iapp.github\patchguarddisabler.h
+	"x\x.h"
+	"utils.h"
+	"patcher.h"
+	"bcdedit.h"
+
+1471123273 d:\codeblocks\examples\iapp.github\patcher.h
+	"x\x.h"
+	<imagehlp.h>
+
+1471124566 d:\codeblocks\examples\iapp.github\bcdedit.h
+	"x\x.h"
+
+1553041473 source:d:\codeblocks\examples\iapp.github\bcdedit.cpp
+	"bcdedit.h"
+	"utils.h"
+
+1439011395 source:d:\codeblocks\examples\iapp.github\connectingdlg.cpp
+	"main.h"
+
+1553038538 source:d:\codeblocks\examples\iapp.github\connection.cpp
+	"connection.h"
+
+1553043749 source:d:\codeblocks\examples\iapp.github\iapp.rc
+	"iapprsrc.h"
+
+1553038588 source:d:\codeblocks\examples\iapp.github\logindlg.cpp
+	"main.h"
+
+1553044157 source:d:\codeblocks\examples\iapp.github\main.cpp
+	"main.h"
+
+1553041145 source:d:\codeblocks\examples\iapp.github\mainframe.cpp
+	"main.h"
+
+1471134233 source:d:\codeblocks\examples\iapp.github\patcher.cpp
+	"patcher.h"
+	"utils.h"
+
+1553040617 source:d:\codeblocks\examples\iapp.github\patchguarddisabler.cpp
+	"main.h"
+	"patchguarddisabler.h"
+
+1553041037 source:d:\codeblocks\examples\iapp.github\patchguarddlg.cpp
+	"main.h"
+
+1553038423 source:d:\codeblocks\examples\iapp.github\register.cpp
+	"register.h"
+
+1553041043 source:d:\codeblocks\examples\iapp.github\settingsdlg.cpp
+	"main.h"
+
+1553041233 source:d:\codeblocks\examples\iapp.github\tabpage.cpp
+	"main.h"
+
+1471129522 source:d:\codeblocks\examples\iapp.github\updatingdlg.cpp
+	"main.h"
+
+1553041306 source:d:\codeblocks\examples\iapp.github\utils.cpp
+	"x/x.h"
+	"utils.h"
+
+1553042214 source:d:\codeblocks\examples\iapp.github\x\xanimate.cpp
+	"xanimate.h"
+
+1553043098 d:\codeblocks\examples\iapp.github\x\xanimate.h
+	"xwnd.h"
+
+1553042218 source:d:\codeblocks\examples\iapp.github\x\xapp.cpp
+	"xapp.h"
+	"xevent.h"
+	"xwnd.h"
+
+1553042413 source:d:\codeblocks\examples\iapp.github\x\xbutton.cpp
+	"xbutton.h"
+
+1553042299 source:d:\codeblocks\examples\iapp.github\x\xcombobox.cpp
+	"xcombobox.h"
+
+1553042300 source:d:\codeblocks\examples\iapp.github\x\xcomboboxex.cpp
+	"xcomboboxex.h"
+
+1553043099 d:\codeblocks\examples\iapp.github\x\xcomboboxex.h
+	"xcombobox.h"
+
+1553042300 source:d:\codeblocks\examples\iapp.github\x\xcoords.cpp
+
+1553042474 source:d:\codeblocks\examples\iapp.github\x\xdatetimepick.cpp
+	"xdatetimepick.h"
+
+1553043099 d:\codeblocks\examples\iapp.github\x\xdatetimepick.h
+	"xwnd.h"
+
+1553042488 source:d:\codeblocks\examples\iapp.github\x\xdialog.cpp
+	"xdialog.h"
+
+1553042496 source:d:\codeblocks\examples\iapp.github\x\xedit.cpp
+	"xedit.h"
+
+1553042507 source:d:\codeblocks\examples\iapp.github\x\xevent.cpp
+	"xevent.h"
+	"xapp.h"
+	"xwnd.h"
+
+1553042519 source:d:\codeblocks\examples\iapp.github\x\xfile.cpp
+	"xfile.h"
+
+1553042597 source:d:\codeblocks\examples\iapp.github\x\xframewnd.cpp
+	"xframewnd.h"
+
+1553042597 source:d:\codeblocks\examples\iapp.github\x\xgdi.cpp
+	"xgdi.h"
+
+1553042598 source:d:\codeblocks\examples\iapp.github\x\xheader.cpp
+	"xheader.h"
+
+1553043301 d:\codeblocks\examples\iapp.github\x\xheader.h
+	"xwnd.h"
+
+1553042598 source:d:\codeblocks\examples\iapp.github\x\xhtmlctrl.cpp
+	"xhtmlctrl.h"
+
+1553042598 source:d:\codeblocks\examples\iapp.github\x\ximagelist.cpp
+	"ximagelist.h"
+
+1553042598 source:d:\codeblocks\examples\iapp.github\x\xinternet.cpp
+	"xinternet.h"
+
+1553042599 source:d:\codeblocks\examples\iapp.github\x\xlinkctrl.cpp
+	"xlinkctrl.h"
+
+1553042599 source:d:\codeblocks\examples\iapp.github\x\xlistbox.cpp
+	"xlistbox.h"
+
+1553043302 d:\codeblocks\examples\iapp.github\x\xlistbox.h
+	"xwnd.h"
+
+1553042599 source:d:\codeblocks\examples\iapp.github\x\xlistview.cpp
+	"xlistview.h"
+
+1553042599 source:d:\codeblocks\examples\iapp.github\x\xmdichildwnd.cpp
+	"xmdichildwnd.h"
+
+1553042599 source:d:\codeblocks\examples\iapp.github\x\xmdiclient.cpp
+	"xmdiclient.h"
+
+1553043303 d:\codeblocks\examples\iapp.github\x\xmdiclient.h
+	"xwnd.h"
+
+1553042600 source:d:\codeblocks\examples\iapp.github\x\xmdiframewnd.cpp
+	"xmdiframewnd.h"
+	"xmdiclient.h"
+
+1553042600 source:d:\codeblocks\examples\iapp.github\x\xmenu.cpp
+	"xapp.h"
+	"xmenu.h"
+
+1553042691 source:d:\codeblocks\examples\iapp.github\x\xmenuex.cpp
+	"xmenuex.h"
+	"xutils.h"
+	"xapp.h"
+
+1553042691 source:d:\codeblocks\examples\iapp.github\x\xmsgbox.cpp
+	"xmsgbox.h"
+
+1553042691 source:d:\codeblocks\examples\iapp.github\x\xobject.cpp
+	"xobject.h"
+
+1553042691 source:d:\codeblocks\examples\iapp.github\x\xolectrl.cpp
+	"xolectrl.h"
+
+1553042692 source:d:\codeblocks\examples\iapp.github\x\xprogress.cpp
+	"xprogress.h"
+
+1553042692 source:d:\codeblocks\examples\iapp.github\x\xregkey.cpp
+	"xregkey.h"
+
+1553042692 source:d:\codeblocks\examples\iapp.github\x\xrichedit.cpp
+	"xrichedit.h"
+
+1553042692 source:d:\codeblocks\examples\iapp.github\x\xscrollbar.cpp
+	"xscrollbar.h"
+
+1553043305 d:\codeblocks\examples\iapp.github\x\xscrollbar.h
+	"xwnd.h"
+
+1553042692 source:d:\codeblocks\examples\iapp.github\x\xshellnotifyicon.cpp
+	"xshellnotifyicon.h"
+	"xutils.h"
+
+1553042841 source:d:\codeblocks\examples\iapp.github\x\xskinnedbutton.cpp
+	"xskinnedbutton.h"
+
+1553042842 source:d:\codeblocks\examples\iapp.github\x\xskinnedcombobox.cpp
+	"xskinnedcombobox.h"
+
+1553042842 source:d:\codeblocks\examples\iapp.github\x\xskinneddlg.cpp
+	"xskinneddlg.h"
+
+1553042842 source:d:\codeblocks\examples\iapp.github\x\xskinnededit.cpp
+	"xskinnededit.h"
+
+1553042842 source:d:\codeblocks\examples\iapp.github\x\xskinnedframe.cpp
+	"xskinnedframe.h"
+
+1553042843 source:d:\codeblocks\examples\iapp.github\x\xskinnedlistview.cpp
+	"xskinnedlistview.h"
+
+1553042843 source:d:\codeblocks\examples\iapp.github\x\xskinnedmenu.cpp
+	"xskinnedmenu.h"
+
+1553042843 source:d:\codeblocks\examples\iapp.github\x\xskinnedmsgbox.cpp
+	"xskinnedmsgbox.h"
+
+1553042843 source:d:\codeblocks\examples\iapp.github\x\xskinnedprogress.cpp
+	"xskinnedprogress.h"
+
+1553042843 source:d:\codeblocks\examples\iapp.github\x\xskinnedstatic.cpp
+	"xskinnedstatic.h"
+
+1553042844 source:d:\codeblocks\examples\iapp.github\x\xskinnedstatusbar.cpp
+	"xskinnedstatusbar.h"
+
+1553042844 source:d:\codeblocks\examples\iapp.github\x\xskinnedtreeview.cpp
+	"xskinnedtreeview.h"
+	"time.h"
+
+1553042844 source:d:\codeblocks\examples\iapp.github\x\xskinnedwnd.cpp
+	"xskinnedwnd.h"
+
+1553042899 source:d:\codeblocks\examples\iapp.github\x\xstatic.cpp
+	"xstatic.h"
+
+1553042899 source:d:\codeblocks\examples\iapp.github\x\xstaticlink.cpp
+	"xstaticlink.h"
+
+1553042877 source:d:\codeblocks\examples\iapp.github\x\xstatusbar.cpp
+	"xstatusbar.h"
+
+1553042900 source:d:\codeblocks\examples\iapp.github\x\xtabctrl.cpp
+	"xtabctrl.h"
+
+1553042895 source:d:\codeblocks\examples\iapp.github\x\xthread.cpp
+	"xthread.h"
+
+1553042978 source:d:\codeblocks\examples\iapp.github\x\xtl.cpp
+	"xtl.h"
+
+1553042978 source:d:\codeblocks\examples\iapp.github\x\xtoolbar.cpp
+	"xtoolbar.h"
+
+1553043481 d:\codeblocks\examples\iapp.github\x\xtoolbar.h
+	"xwnd.h"
+
+1553042978 source:d:\codeblocks\examples\iapp.github\x\xtreeview.cpp
+	"xtreeview.h"
+
+1553042979 source:d:\codeblocks\examples\iapp.github\x\xutils.cpp
+	"xutils.h"
+
+1553042979 source:d:\codeblocks\examples\iapp.github\x\xwinhook.cpp
+	"xwinhook.h"
+
+1553043482 d:\codeblocks\examples\iapp.github\x\xwinhook.h
+	"xobject.h"
+
+1553042979 source:d:\codeblocks\examples\iapp.github\x\xwnd.cpp
+	"xwnd.h"
+	"xmenu.h"
+

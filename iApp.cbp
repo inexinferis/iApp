@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="iApp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="Release/iApp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="Debug">
+				<Option output="Debug/iApp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="-static-libgcc" />
+			<Add option="-static-libstdc++" />
+			<Add library="gdi32" />
+			<Add library="wininet" />
+			<Add library="comctl32" />
+			<Add library="crypto" />
+			<Add library="oleaut32" />
+			<Add library="ole32" />
+			<Add library="uuid" />
+			<Add library="version" />
+			<Add library="imagehlp" />
+			<Add library="crypt32" />
+			<Add library="cryptui" />
+			<Add library="libws2_32" />
+		</Linker>
+		<Unit filename="aboutdlg.cpp" />
+		<Unit filename="bcdedit.cpp" />
+		<Unit filename="bcdedit.h" />
+		<Unit filename="connectingdlg.cpp" />
+		<Unit filename="connection.cpp" />
+		<Unit filename="connection.h" />
+		<Unit filename="iApp.Manifest" />
+		<Unit filename="iapp.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="iapprsrc.h" />
+		<Unit filename="logindlg.cpp" />
+		<Unit filename="main.cpp" />
+		<Unit filename="main.h" />
+		<Unit filename="mainframe.cpp" />
+		<Unit filename="patcher.cpp" />
+		<Unit filename="patcher.h" />
+		<Unit filename="patchguarddisabler.cpp" />
+		<Unit filename="patchguarddisabler.h" />
+		<Unit filename="patchguarddlg.cpp" />
+		<Unit filename="register.cpp" />
+		<Unit filename="register.h" />
+		<Unit filename="settingsdlg.cpp" />
+		<Unit filename="tabpage.cpp" />
+		<Unit filename="updatingdlg.cpp" />
+		<Unit filename="utils.cpp" />
+		<Unit filename="utils.h" />
+		<Unit filename="x/x.h" />
+		<Unit filename="x/xanimate.cpp" />
+		<Unit filename="x/xanimate.h" />
+		<Unit filename="x/xapp.cpp" />
+		<Unit filename="x/xapp.h" />
+		<Unit filename="x/xbutton.cpp" />
+		<Unit filename="x/xbutton.h" />
+		<Unit filename="x/xcombobox.cpp" />
+		<Unit filename="x/xcombobox.h" />
+		<Unit filename="x/xcomboboxex.cpp" />
+		<Unit filename="x/xcomboboxex.h" />
+		<Unit filename="x/xcoords.cpp" />
+		<Unit filename="x/xcoords.h" />
+		<Unit filename="x/xdatetimepick.cpp" />
+		<Unit filename="x/xdatetimepick.h" />
+		<Unit filename="x/xdialog.cpp" />
+		<Unit filename="x/xdialog.h" />
+		<Unit filename="x/xedit.cpp" />
+		<Unit filename="x/xedit.h" />
+		<Unit filename="x/xevent.cpp" />
+		<Unit filename="x/xevent.h" />
+		<Unit filename="x/xfile.cpp" />
+		<Unit filename="x/xfile.h" />
+		<Unit filename="x/xframewnd.cpp" />
+		<Unit filename="x/xframewnd.h" />
+		<Unit filename="x/xgdi.cpp" />
+		<Unit filename="x/xgdi.h" />
+		<Unit filename="x/xheader.cpp" />
+		<Unit filename="x/xheader.h" />
+		<Unit filename="x/xhtmlctrl.cpp" />
+		<Unit filename="x/xhtmlctrl.h" />
+		<Unit filename="x/ximagelist.cpp" />
+		<Unit filename="x/ximagelist.h" />
+		<Unit filename="x/xinternet.cpp" />
+		<Unit filename="x/xinternet.h" />
+		<Unit filename="x/xlinkctrl.cpp" />
+		<Unit filename="x/xlinkctrl.h" />
+		<Unit filename="x/xlistbox.cpp" />
+		<Unit filename="x/xlistbox.h" />
+		<Unit filename="x/xlistview.cpp" />
+		<Unit filename="x/xlistview.h" />
+		<Unit filename="x/xmdichildwnd.cpp" />
+		<Unit filename="x/xmdichildwnd.h" />
+		<Unit filename="x/xmdiclient.cpp" />
+		<Unit filename="x/xmdiclient.h" />
+		<Unit filename="x/xmdiframewnd.cpp" />
+		<Unit filename="x/xmdiframewnd.h" />
+		<Unit filename="x/xmenu.cpp" />
+		<Unit filename="x/xmenu.h" />
+		<Unit filename="x/xmenuex.cpp" />
+		<Unit filename="x/xmenuex.h" />
+		<Unit filename="x/xmsgbox.cpp" />
+		<Unit filename="x/xmsgbox.h" />
+		<Unit filename="x/xobject.cpp" />
+		<Unit filename="x/xobject.h" />
+		<Unit filename="x/xolectrl.cpp" />
+		<Unit filename="x/xolectrl.h" />
+		<Unit filename="x/xprogress.cpp" />
+		<Unit filename="x/xprogress.h" />
+		<Unit filename="x/xregkey.cpp" />
+		<Unit filename="x/xregkey.h" />
+		<Unit filename="x/xrichedit.cpp" />
+		<Unit filename="x/xrichedit.h" />
+		<Unit filename="x/xscrollbar.cpp" />
+		<Unit filename="x/xscrollbar.h" />
+		<Unit filename="x/xshellnotifyicon.cpp" />
+		<Unit filename="x/xshellnotifyicon.h" />
+		<Unit filename="x/xskinnedbutton.cpp" />
+		<Unit filename="x/xskinnedbutton.h" />
+		<Unit filename="x/xskinnedcombobox.cpp" />
+		<Unit filename="x/xskinnedcombobox.h" />
+		<Unit filename="x/xskinneddlg.cpp" />
+		<Unit filename="x/xskinneddlg.h" />
+		<Unit filename="x/xskinnededit.cpp" />
+		<Unit filename="x/xskinnededit.h" />
+		<Unit filename="x/xskinnedframe.cpp" />
+		<Unit filename="x/xskinnedframe.h" />
+		<Unit filename="x/xskinnedlistview.cpp" />
+		<Unit filename="x/xskinnedlistview.h" />
+		<Unit filename="x/xskinnedmenu.cpp" />
+		<Unit filename="x/xskinnedmenu.h" />
+		<Unit filename="x/xskinnedmsgbox.cpp" />
+		<Unit filename="x/xskinnedmsgbox.h" />
+		<Unit filename="x/xskinnedprogress.cpp" />
+		<Unit filename="x/xskinnedprogress.h" />
+		<Unit filename="x/xskinnedstatic.cpp" />
+		<Unit filename="x/xskinnedstatic.h" />
+		<Unit filename="x/xskinnedstatusbar.cpp" />
+		<Unit filename="x/xskinnedstatusbar.h" />
+		<Unit filename="x/xskinnedtreeview.cpp" />
+		<Unit filename="x/xskinnedtreeview.h" />
+		<Unit filename="x/xskinnedwnd.cpp" />
+		<Unit filename="x/xskinnedwnd.h" />
+		<Unit filename="x/xstatic.cpp" />
+		<Unit filename="x/xstatic.h" />
+		<Unit filename="x/xstaticlink.cpp" />
+		<Unit filename="x/xstaticlink.h" />
+		<Unit filename="x/xstatusbar.cpp" />
+		<Unit filename="x/xstatusbar.h" />
+		<Unit filename="x/xtabctrl.cpp" />
+		<Unit filename="x/xtabctrl.h" />
+		<Unit filename="x/xthread.cpp" />
+		<Unit filename="x/xthread.h" />
+		<Unit filename="x/xtl.cpp" />
+		<Unit filename="x/xtl.h" />
+		<Unit filename="x/xtoolbar.cpp" />
+		<Unit filename="x/xtoolbar.h" />
+		<Unit filename="x/xtreeview.cpp" />
+		<Unit filename="x/xtreeview.h" />
+		<Unit filename="x/xundef.h" />
+		<Unit filename="x/xutils.cpp" />
+		<Unit filename="x/xutils.h" />
+		<Unit filename="x/xwinhook.cpp" />
+		<Unit filename="x/xwinhook.h" />
+		<Unit filename="x/xwnd.cpp" />
+		<Unit filename="x/xwnd.h" />
+		<Extensions>
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general />
+			</DoxyBlocks>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
